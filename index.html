@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آسان سفر! - خرید بلیط هواپیما و قطار</title>
+    <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image" href="/images/asan-safar-logo.png">
+<link rel="font" href="/fonts/Tanker-Regular.ttf">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-container">
+            <img class="logo" src="/images/asan-safar-logo.png" alt="">
+            <h1>آسان سفر</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">خانه</a></li>
+                    <li><a href="flights.html">پرواز ها</a></li>
+                    <li><a href="trains.html">قطار ها</a></li>
+                    <li><a href="confirmation.html">رزرو های من</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>ماجراحویی خود را آسان کنید!</h2>
+            <p>پیدا و رزرو بلیط های هواپیما و قطار به آسانی آب خوردن!</p>
+        </section>
+
+        <section class="booking-options">
+            <div class="booking-card flight-booking">
+                <h3>رزرو بلیط هواپیما</h3>
+                <form id="quick-flight-search">
+                    <div class="form-group">
+                        <label for="flight-from">مبدا</label>
+                        <input type="text" id="flight-from" placeholder="شهر یا فرودگاه">
+                    </div>
+                    <div class="form-group">
+                        <label for="flight-to">مقصد</label>
+                        <input type="text" id="flight-to" placeholder="شهر یا فرودگاه">
+                    </div>
+                    <div class="form-group">
+                        <label for="flight-date">تاریخ</label>
+                        <input type="date" id="flight-date">
+                    </div>
+                    <button type="submit" class="btn">جستجو...</button>
+                </form>
+                <a href="flights.html" class="link-btn">جستجو پیشرفته...</a>
+            </div>
+
+            <div class="booking-card train-booking">
+                <h3>رزرو بلیط قطار</h3>
+                <form id="quick-train-search">
+                    <div class="form-group">
+                        <label for="train-from">مبدا</label>
+                        <input type="text" id="train-from" placeholder="شهر یا ترمینال">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-to">مقصد</label>
+                        <input type="text" id="train-to" placeholder="شهر یا ترمینال">
+                    </div>
+                    <div class="form-group">
+                        <label for="train-date">تاریخ</label>
+                        <input type="date" id="train-date">
+                    </div>
+                    <button type="submit" class="btn">جستجو...</button>
+                </form>
+                <a href="trains.html" class="link-btn">جستجو پیشرفته...</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <h2>چرا آسان سفر؟</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <img src="images/money-check-dollar-svgrepo-com.svg" alt="Best Price">
+                    <h3>بهترین قیمت ها!</h3>
+                    <p>ما بلیط های هواپیما و قطار را با بهترین قیمت دراختیار شما قرار میدهیم.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/booking-booking-svgrepo-com.svg" alt="Easy Booking">
+                    <h3>رزرو آسان!</h3>
+                    <p>پروسه بسیار آسان رزرو بلیط ها برای رضایت شما</p>
+                </div>
+                <div class="feature-card">
+                    <img src="images/support-svgrepo-com.svg" alt="24/7 Support">
+                    <h3>پشتیبانی 24/7!</h3>
+                    <p>تیم پشتیبانی ما درتمامی ساعات روز پاسخگوی مشکلات شما هستند.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>آسان سفر. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,497 @@
+/* استایل هایی که تمام صفحات را تحت تاثیر قرار میدهند */
+@font-face {
+    font-family: 'CustomFontd';
+    src: url('/fonts/Vazir-Regular-FD.woff') format('woff'),
+    url('/fonts/Vazir-Regular-FD.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('/fonts/Vazir-Regular.woff') format('woff'),
+    url('/fonts/Vazir-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CustomFont', 'CustomFontd';
+}
+
+body {
+     direction: rtl;
+    text-align: right;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f5f7fa;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #e4920f;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #F9A825;
+    transform: translateY(-2px);
+}
+
+.link-btn {
+    display: inline-block;
+    margin-top: 15px;
+    color: #9e732e;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.link-btn:hover {
+    text-decoration: underline;
+}
+
+/* استایل هدر ها */
+header {
+    background-color: #F9A825;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header h1 {
+    font-family: 'CustomFont';
+    margin: 0;
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-left: 0;
+    margin-right: 25px;
+}
+
+nav ul li a {
+    font-family: 'CustomFont';
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+    position: relative;
+}
+
+nav ul li a:hover, 
+nav ul li a.active {
+    color: #775c13;
+}
+nav ul li a.active:after,
+nav ul li a:hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #775c13;
+}
+/* استایل لوگو */
+.logo-container {
+    display: flex;
+    align-items: center;
+    float: right;
+}
+
+.logo {
+    height: 40px; 
+    width: auto;
+    margin-right: 15px;
+}
+
+/* قسمت هیرو */
+.hero {
+    text-align: center;
+    padding: 60px 0;
+    margin-bottom: 40px;
+}
+
+.hero h2 {
+    font-family: 'CustomFont';
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #50462c;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* تنظیمات و استایل های قسمت سرچ در صفحه خانه */
+.booking-options {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.booking-card {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.booking-card:hover {
+    transform: translateY(-5px);
+}
+
+.booking-card h3 {
+    margin-bottom: 20px;
+    color: #50462c;
+    font-size: 1.5em;
+}
+
+.flight-booking {
+    border-top: 4px solid #4a6fa5;
+}
+
+.train-booking {
+    border-top: 4px solid #e74c3c;
+}
+
+.form-group {
+    margin-bottom: 15px;
+        text-align: right;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #555;
+        text-align: right;
+}
+
+.form-group input, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+        text-align: right;
+}
+
+/* قسمت قابلیت ها و ویژگی های سایت */
+.features {
+    margin-bottom: 50px;
+}
+
+.features h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #50462c;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-family: 'CustomFont';
+    margin-bottom: 15px;
+    color: #50462c;
+}
+
+.feature-card p {
+    color: #666;
+}
+
+/* قسمت جستجو */
+.search-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.search-container h2 {
+    margin-bottom: 20px;
+    color: #50462c;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+.search-btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+/* قسمت نتایج یا همان بلیط ها */
+.results-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.result-card {
+    display: flex;
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    border-color: #4a6fa5;
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.1);
+}
+
+.result-logo {
+    flex: 0 0 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.result-logo img {
+    max-width: 100%;
+    max-height: 50px;
+}
+
+.result-details {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.result-details h3 {
+    margin-bottom: 10px;
+    color: #50462c;
+}
+
+.result-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.result-price {
+    flex: 0 0 200px;
+    text-align: right;
+}
+
+.result-price .price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #50462c;
+    margin-bottom: 10px;
+}
+
+/* قسمت رزرو بلیط ها */
+.bookings-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.booking-card {
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.booking-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.booking-id {
+    font-weight: bold;
+    color: #50462c;
+}
+
+.booking-status {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-confirmed {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.booking-details {
+    display: flex;
+    gap: 20px;
+}
+
+.booking-info {
+    flex: 1;
+}
+
+.booking-info h3 {
+    margin-bottom: 10px;
+    color: #50462c;
+}
+
+.booking-meta {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.booking-actions {
+    flex: 0 0 150px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.no-bookings {
+    text-align: center;
+    color: #666;
+}
+
+.no-bookings a {
+    color: #4a6fa5;
+    text-decoration: none;
+}
+
+.no-bookings a:hover {
+    text-decoration: underline;
+}
+
+/* استایل فوتر */
+footer {
+    background-color: #F9A825;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+/* ریسپانسیو کردن صفحات */
+@media (max-width: 768px) {
+        header .container {
+        flex-direction: column;
+    }
+        .logo-container {
+        margin-bottom: 15px;
+        float: none;
+    }
+
+    .booking-options {
+        flex-direction: column;
+    }
+    
+    .form-row {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .result-card {
+        flex-direction: column;
+    }
+    
+    .result-price {
+        text-align: left;
+        margin-top: 15px;
+    }
+    
+    .booking-details {
+        flex-direction: column;
+    }
+    
+    .booking-actions {
+        margin-top: 15px;
+    }
+    
+    header h1, nav {
+        float: none;
+        text-align: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 10px 0;
+        margin-right: 0;
+    }
+}

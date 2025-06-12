@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رزرو بلیط قطار - آسان سفر</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image" href="/images/asan-safar-logo.png">
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="logo-container">
+            <img class="logo" src="/images/asan-safar-logo.png" alt="">
+            <h1>آسان سفر</h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">خانه</a></li>
+                    <li><a href="flights.html">پرواز ها</a></li>
+                    <li><a href="trains.html" class="active">قطار ها</a></li>
+                    <li><a href="confirmation.html">رزرو های من</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h2>پیدا و رزرو قطار</h2>
+        
+        <div class="search-container">
+            <form id="train-search-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="train-from">مبدا</label>
+                        <input type="text" id="train-from" placeholder="شهر یا ترمینال" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="train-to">مقصد</label>
+                        <input type="text" id="train-to" placeholder="شهر یا ترمینال" required>
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="journey-date">تاریخ حرکت</label>
+                        <input type="date" id="journey-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return-train-date">تاریخ برگشت (اختیاری)</label>
+                        <input type="date" id="return-train-date">
+                    </div>
+                </div>
+                
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="train-passengers">تعداد مسافران</label>
+                        <select id="train-passengers">
+                            <option value="1">یک نفر</option>
+                            <option value="2">دو نفر</option>
+                            <option value="3">سه نفر</option>
+                            <option value="4">چهار نفر</option>
+                            <option value="family">خانواده</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="train-class">کلاس</label>
+                        <select id="train-class">
+                            <option value="sleeper">یک تخت</option>
+                            <option value="3ac">شش تخت</option>
+                            <option value="2ac">چهار تخت</option>
+                            <option value="1ac">دو تخت</option>
+                            <option value="executive">بدون تخت</option>
+                        </select>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn search-btn">جستجو...</button>
+            </form>
+        </div>
+        
+        <div class="results-container" id="train-results">
+            <!-- رزرو ها در این قسمت نشان داده میشود که از فایل جی اس گرفته میشود! -->
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>آسان سفر. تمامی حقوق محفوظ است.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
