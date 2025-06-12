@@ -47,6 +47,7 @@ Once the webpage is running, you can navigate through interface. Use the navigat
 
 ## Search Example
 To do a search, you have to open script.js file and edit the date to match today's date.(for both flights and trains)
+
 For example :
 
 ```bash
