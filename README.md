@@ -28,13 +28,13 @@ To get started with ticket booking project, you will need to clone the repositor
    git clone https://github.com/Plut0ishere/simple-ticket-booking.git
    cd simple-ticket-booking
    ```
-3. **Install Dependencies**:
+2. **Install Dependencies**:
 
    Make sure you have Node.js and npm installed. Run the following command:
    ```bash
    npm install
    ```
-4. **Run the Webpage**:
+3. **Run the Webpage**:
 
    Start the Webpage with:
    ```bash
